@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Library Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #56ccf2, #2f80ed);
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2f80ed;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #2f80ed;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn-primary {
+            background-color: #3498db;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        .btn-success {
+            background-color: #27ae60;
+            border: none;
+        }
+        .btn-success:hover {
+            background-color: #218c54;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">📚</div>
+        <h1>Welcome to the Library</h1>
+        <p>Manage your book collection with ease.</p>
+        <a href="{% url 'add_book' %}" class="btn btn-primary">➕ Add a New Book</a>
+        <a href="{% url 'book_list' %}" class="btn btn-success">📖 View Books</a>
+    </div>
+</body>
+</html>
